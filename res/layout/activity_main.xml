@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewPlainTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plain_text" />
+
+    <TextView
+        android:id="@+id/textViewEncryptResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonSend"
+        android:layout_alignLeft="@+id/textViewEncryptResultLabel"
+        android:layout_below="@+id/textViewEncryptResultLabel" />
+
+    <Button
+        android:id="@+id/buttonEncrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPlainText"
+        android:layout_below="@+id/editTextPlainText"
+        android:text="@string/encrypt" />
+
+    <TextView
+        android:id="@+id/textViewEncryptResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonEncrypt"
+        android:layout_below="@+id/buttonEncrypt"
+        android:text="@string/encrypt_result" />
+
+    <TextView
+        android:id="@+id/textViewResultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewResult"
+        android:layout_alignLeft="@+id/buttonSend"
+        android:layout_marginBottom="32dp"
+        android:text="@string/send_result" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewResultLabel"
+        android:layout_alignLeft="@+id/textViewEncryptResult"
+        android:text="@string/button_send" />
+
+    <EditText
+        android:id="@+id/editTextPlainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPlainTextLabel"
+        android:layout_below="@+id/textViewPlainTextLabel"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewEncryptResultLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="142dp" />
+
+</RelativeLayout>
